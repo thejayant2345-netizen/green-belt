@@ -1,5 +1,6 @@
 node_modules
 .next
-.env*
+out
+contracts/**/target
 .DS_Store
-coverage
+.env*

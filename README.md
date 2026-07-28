@@ -41,3 +41,33 @@ The current MVP focuses on the core experience: a sender chooses a split, the ap
 - Integrate SEP-24 anchor onboarding for fiat on/off-ramp flows
 - Replace the mock transfer simulation with Soroban contract calls
 - Add actual analytics and feedback persistence
+
+## Deployment (Vercel)
+
+Recommended quick deploy steps:
+
+1. Create a new GitHub repository and push this project:
+
+```bash
+git init
+git add .
+git commit -m "chore: initial RemitSaver MVP"
+git branch -M main
+# create remote on GitHub and push (replace <your-repo-url>)
+git remote add origin <your-repo-url>
+git push -u origin main
+```
+
+2. Deploy on Vercel by connecting the GitHub repo at https://vercel.com.
+
+Or deploy using the Vercel CLI:
+
+```bash
+npm i -g vercel
+vercel login
+vercel --prod
+```
+
+3. In Vercel project settings, set any environment variables you need (e.g. NEXT_PUBLIC_HORIZON_URL).
+
+See `DEPLOY_VERCEL.md` for a concise guide.
