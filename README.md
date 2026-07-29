@@ -68,6 +68,18 @@ vercel login
 vercel --prod
 ```
 
+### Fallback CI deployment via GitHub Actions
+If Vercel cannot connect to the GitHub repo because the GitHub App or repo permissions are not fully configured, this repository includes a fallback workflow that deploys on every push to `main`.
+
+1. Create a personal Vercel token locally:
+
+```bash
+npx vercel tokens add github-action
+```
+
+2. Add the token to your GitHub repository secrets as `VERCEL_TOKEN`.
+3. Push to `main`. The workflow in `.github/workflows/vercel-deploy.yml` will run and deploy the app to Vercel.
+
 3. In Vercel project settings, set any environment variables you need (e.g. NEXT_PUBLIC_HORIZON_URL).
 
 See `DEPLOY_VERCEL.md` for a concise guide.
