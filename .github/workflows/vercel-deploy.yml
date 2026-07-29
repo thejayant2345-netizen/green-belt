@@ -28,7 +28,7 @@ jobs:
       - name: Deploy to Vercel
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_SCOPE: team_Hq2O5NZyOGkUncrgEUch3RTC
+          VERCEL_ORG_ID: team_Hq2O5NZyOGkUncrgEUch3RTC
           VERCEL_PROJECT_ID: prj_FFm7IXZziGaiTwT6lUC92KFKMui8
         run: |
-          npx vercel deploy --prod --token "$VERCEL_TOKEN" --yes --scope "$VERCEL_SCOPE" --project "$VERCEL_PROJECT_ID"
+          npx vercel deploy --prod --token "$VERCEL_TOKEN" --yes
