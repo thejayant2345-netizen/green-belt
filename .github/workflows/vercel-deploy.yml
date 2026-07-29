@@ -31,4 +31,4 @@ jobs:
           VERCEL_ORG_ID: team_Hq2O5NZyOGkUncrgEUch3RTC
           VERCEL_PROJECT_ID: prj_FFm7IXZziGaiTwT6lUC92KFKMui8
         run: |
-          npx vercel deploy --prod --token "$VERCEL_TOKEN" --yes --project "green-belt" --scope "jayantvaibhav"
+          npx vercel deploy --prod --token "$VERCEL_TOKEN" --yes --project "green-belt"
