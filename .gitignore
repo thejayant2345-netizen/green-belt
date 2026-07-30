@@ -7,3 +7,6 @@ coverage
 contracts/**/target
 dist
 .vercel
+
+# Local Netlify folder
+.netlify

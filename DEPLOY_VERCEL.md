@@ -1,39 +1,43 @@
-# Deploying RemitSaver to Vercel
+# Deploying RemitSaver
 
-This guide shows two quick ways to deploy the project to Vercel: via the Vercel dashboard (recommended) or using the Vercel CLI.
+This guide covers the two deployment paths that were used for this project: Netlify and Vercel.
 
-## Option A — Connect GitHub repo (recommended)
+## Option A — Netlify (recommended for this MVP)
 
-1. Push this repo to GitHub (see README for the exact commands).
-2. Go to https://vercel.com/new and choose the repository.
-3. Use default build settings (Framework: Next.js). Vercel will run `npm run build` and publish the site.
-4. Set environment variables in the project settings (if needed):
+1. Build the project:
+
+```bash
+npm run build
+```
+
+2. Deploy the static export:
+
+```bash
+npx netlify deploy --dir out --prod
+```
+
+3. If prompted, create or link a Netlify project.
+4. Set environment variables in the Netlify dashboard if needed:
    - `NEXT_PUBLIC_HORIZON_URL` — Horizon RPC endpoint for Stellar (testnet or mainnet)
+
+## Option B — Vercel
+
+1. Push the repo to GitHub.
+2. Go to https://vercel.com/new and choose the repository.
+3. Use default build settings. Vercel will run `npm run build` and publish the site.
+4. Set environment variables in the project settings if needed.
 5. Click Deploy.
 
-## Option B — Vercel CLI
-
-1. Install Vercel CLI:
+## CLI deployment for Vercel
 
 ```bash
 npm i -g vercel
-```
-
-2. Login from the terminal:
-
-```bash
 vercel login
-```
-
-3. In the project root run:
-
-```bash
 vercel --prod
 ```
 
-This will guide you through linking the project to a Vercel account and deploying immediately.
-
 ## Notes
 
-- If you need server-side environment secrets (for anchors or horizon keys), use Vercel's Environment Variables UI and never commit secrets to the repository.
-- For CI deployments, connect the GitHub repo and enable automatic deployments from the `main` branch.
+- The project uses a static export build path, so it works well for Netlify and Vercel.
+- Never commit secrets to the repository. Use dashboard environment variables instead.
+- For future automation, connect the GitHub repo to the hosting platform and enable automatic deployments from the `main` branch.
