@@ -114,7 +114,9 @@ npm run build
 
 ## 🔒 Verification & Compliance
 
+- [x] **Live Demo Deployment**: [https://green-belt-eight.vercel.app](https://green-belt-eight.vercel.app)
 - ✅ **Smart Contract compiled**: `contracts/split-vault/target/wasm32-unknown-unknown/release/split_vault.wasm`
 - ✅ **Frontend build passed**: Next.js static output generated in `/out`
 - ✅ **15+ Commits**: Clean git commit history documenting progress.
+
 

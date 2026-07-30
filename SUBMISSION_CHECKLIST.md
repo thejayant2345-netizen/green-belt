@@ -23,5 +23,6 @@
   - 15+ meaningful commits in public GitHub repository.
 
 - [x] **Deployment & Review**:
-  - Ready for live Vercel / Netlify deployment.
+  - Live Vercel Production Deployment: [https://green-belt-eight.vercel.app](https://green-belt-eight.vercel.app)
+
 

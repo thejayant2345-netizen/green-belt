@@ -23,8 +23,9 @@ docs/screenshots/
 
 ## 🎬 Live Demo & Video Guide
 
-- **Live Web Application URL**: `https://remitsaver.vercel.app` (or local preview at `http://localhost:3000`)
+- **Live Web Application URL**: [https://green-belt-eight.vercel.app](https://green-belt-eight.vercel.app)
 - **Demo Video Link**: `https://youtube.com/watch?v=remitsaver-stellar-level4-demo`
+
 - **Soroban Contract Address (Testnet)**: `CB6D94K8X7P32VQZ21M0L99A46W92YXZP0231908LKASJ12304918239`
 
 ### Video Walkthrough Agenda:
